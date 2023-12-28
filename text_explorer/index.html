@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+
+<div class="container">
+  <header>
+    <h1>Text Explorer for Middlemarch</h1>
+  </header>
+  <div class="search-area">
+    <input type="text" id="search-box" placeholder="Search text...">
+    <button id="search-btn">Search</button>
+    <label>
+      <input type="checkbox" id="exact-match-checkbox"> Exact match
+    </label>
+    <button id="prev-btn">Previous</button>
+    <button id="next-btn">Next</button>
+    <span id="search-count"></span>
+  </div>
+  <div id="content-box" class="content-box"></div>
+  <div id="top-words-container" class="top-words-container"></div>
+  <div id="word-frequency-graph-container">
+    <canvas id="word-frequency-graph"></canvas>
+  </div>
+
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

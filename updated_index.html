@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linked Containers</title>
+  <link rel="stylesheet" href="updated_style.css">
+</head>
+<body>
+<div class="navbar">
+  <button><a href="#home">Home</a></button>
+  <div class="dropdown">
+    <button class="drop">Show / Hide Sections</button>
+    <div class="dropdown-content">
+      <a href="#" onclick="toggleVisibility('container1')">Novel</a>
+      <a href="#" onclick="toggleVisibility('container2')">Shooting Script</a>
+      <a href="#" onclick="toggleVisibility('container3')">Post-Production Script</a>
+      <a href="#" onclick="toggleVisibility('container4')">Post-Production Script</a>
+      <a href="#" onclick="toggleVisibility('container5')">Notes</a>
+    </div>
+  </div>
+</div>
+<div id="message" style="color: red; display: none;">All sections are hidden, please reload the page!</div>
+
+<p>Transforming Middlemarch: A Genetic Edition of Andrew Davies' 1994 BBC Adaptation of George Eliot's Novel
+  Introducing the project
+  Welcome to this 'genetic edition' of Andrew Davies' 1994 BBC adaptation of George Eliot's Middlemarch. This multimedia
+  resource, believed to be the first of its kind, uses XML textual encoding - following the principles of the Text
+  Encoding Initiative (TEI) - to enable comparative analyses charting the journey of a literary adaptation from source
+  novel to script and screen.
+
+  Users can navigate from the Shooting Script backwards (to the novel) and forwards (to the Post-production Script),
+  following diamond icons leading to Notes, intertextual references, a range of assets and additional extended
+  Commentaries on key scenes and adaptive moments. In this way, the genetic edition demonstrates both the creative
+  skills of the screen adaptor and script editor, and (via additional production history research) the collaborative
+  nature of classic serial television adaptation.</p>
+
+<div class="container-row">
+  <div class="container" id="container1">
+    <div class="block-heading">Novel</div>
+  </div>
+  <div class="container" id="container2">
+    <div class="block-heading">Shooting Script</div>
+  </div>
+  <div class="container" id="container3">
+    <div class="block-heading">Post Production script</div>
+  </div>
+</div>
+<div class="container-row">
+  <div class="container1" id="container4">
+    <div class="block-heading">Notes</div>
+  </div>
+  <div class="container1" id="container5">
+    <div class="block-heading">Commentary</div>
+  </div>
+</div>
+<script src="https://georgeeliotarchive.org/middlemarch/js/script_index.js">
+</script>
+</body>
+</html>

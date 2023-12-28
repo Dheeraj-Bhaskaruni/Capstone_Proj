@@ -1,0 +1,105 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Styling for navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #4CAF50;
+  display: flex; /* Align items in a row */
+}
+
+.navbar a, .navbar .dropdown {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 4px 6px;
+  text-decoration: none;
+}
+
+.drop {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 4px 6px;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Styling for container rows */
+.container-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.block-heading {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 50px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.content {
+  padding-top: 60px; /* Adjust so the content doesn't overlap with the header */
+}
+
+/* Styling for containers */
+.container, .container1 {
+  padding: 20px;
+  background-color: #1abc9c;
+  height: 300px;
+  margin: 5px;
+  flex-basis: calc(33.33% - 20px); /* Adjust for three items per row */
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: scroll;
+}
+
+/* Responsive Styles for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .container-row {
+    flex-direction: column;
+  }
+
+  .container, .container1 {
+    width: 100%; /* Make containers take full width */
+    margin: 5px 0; /* Adjust margin for vertical stacking */
+    flex-basis: auto; /* Override flex-basis for mobile */
+  }
+
+  /* Adjust navbar and other elements as needed for mobile */
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar a, .navbar .dropdown, .drop {
+    padding: 8px; /* Increase padding for easier touch */
+  }
+  .dropdown-content {
+    position: static; /* Adjust dropdown for mobile */
+  }
+}

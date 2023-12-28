@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oval Image Gallery</title>
+  <style>
+    /* Existing CSS - Keep as is */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      align-content: center;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .image-container {
+      width: 18%;
+      margin: 1%;
+      text-align: center;
+    }
+    .frame {
+      background: #fff;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border-radius: 50%;
+      overflow: hidden;
+      display: inline-block;
+    }
+    .frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 50%;
+    }
+    .image-container p {
+      margin: 10px 0 0;
+      color: #007bff;
+      text-transform: uppercase;
+    }
+
+    /* New Enhancements */
+    .gallery:hover .image-container {
+      opacity: 0.6; /* Dim other images when one is hovered */
+    }
+
+    .image-container:hover {
+      opacity: 1; /* Highlight hovered image */
+    }
+
+    .frame:hover {
+      transform: scale(1.05); /* Slightly enlarge hovered image */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Increase shadow effect */
+    }
+
+    @media only screen and (max-width: 768px) {
+      .image-container {
+        width: 45%; /* Adjust image container size for smaller screens */
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .image-container {
+        width: 90%; /* Further adjust for very small screens */
+      }
+    }
+
+  </style>
+</head>
+<body>
+<h2 align="center">Middlemarch Character Gallery</h2>
+<div class="gallery">
+  <!-- Image Container 1 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Celia_Brooke.png" alt="Character 1">
+    </div>
+    <p>Celia Brooke</p>
+  </div>
+
+  <!-- Image Container 2 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Doeothea_Brooke.png" alt="Character 2">
+    </div>
+    <p>Doeothea Brooke</p>
+  </div>
+
+  <!-- Image Container 3 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Fred_vincy.png" alt="Character 3">
+    </div>
+    <p>Fred_vincy</p>
+  </div>
+
+  <!-- Image Container 4 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Mr_Bulstrode.png" alt="Character 4">
+    </div>
+    <p>Mr_Bulstrode</p>
+  </div>
+
+  <!-- Image Container 5 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Mr_Farebrother.png" alt="Character 5">
+    </div>
+    <p>Mr Farebrother</p>
+
+    <!-- Image Container 6 -->
+  </div>
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Mr_Lydgate.png" alt="Character 5">
+    </div>
+    <p>Mr Lydgate</p>
+  </div>
+  <!-- Image Container 7 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Mrs_Cadwallader.png" alt="Character 5">
+    </div>
+    <p>Mrs Cadwallader</p>
+  </div>
+  <!-- Image Container 8 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Reverend_Edward_Casaubon.png" alt="Character 5">
+    </div>
+    <p>Reverend Edward Casaubon</p>
+  </div>
+  <!-- Image Container 9 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Rosamond_Vincy.png" alt="Character 5">
+    </div>
+    <p>Rosamond Vincy</p>
+  </div>
+  <!-- Image Container 10 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Will_Ladislaw.png" alt="Character 5">
+    </div>
+    <p>Will Ladislaw</p>
+  </div>
+    <!-- Image Container 11 -->
+  <div class="image-container">
+  <div class="frame">
+    <img src="AI_Images/Saint_Theresa.png" alt="Character 5">
+  </div>
+  <p>Saint Theresa</p>
+  </div>
+  <!-- Image Container 12 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Mr_Brooke.png" alt="Character 5">
+    </div>
+    <p>Saint Theresa</p>
+  </div>
+  <!-- Image Container 13 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Sir_James_Chettam.png" alt="Character 5">
+    </div>
+    <p>Sir James Chettam</p>
+
+  </div>
+  <!-- Image Container 14 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Madame_Poincon.png" alt="Character 5">
+    </div>
+    <p>Madame Poincon</p>
+  </div>
+  <!-- Image Container 15 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Sancho_ Don_Quijote.png" alt="Character 5">
+    </div>
+    <p>Sancho, Don Quijote</p>
+  </div>
+  <!-- Image Container 16 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Sir_Humphry_Davy.png" alt="Character 5">
+    </div>
+    <p>Sir Humphry Davy</p>
+  </div>
+  <!-- Image Container 17 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Mr_Casaubon.png" alt="Character 5">
+    </div>
+    <p>Mr. Casaubon</p>
+  </div>
+  <!-- Image Container 18 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Monk.png" alt="Character 5">
+    </div>
+    <p>Monk(The Dog)</p>
+  </div>
+  <!-- Image Container 19 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Tantrip.png" alt="Character 5">
+    </div>
+    <p>Tantripp</p>
+  </div>
+  <!-- Image Container 20 -->
+  <div class="image-container">
+    <div class="frame">
+      <img src="AI_Images/Mary_Garth.png" alt="Character 5">
+    </div>
+    <p>Mary Garth</p>
+  </div>
+
+
+
+
+</div>
+</body>
+</html>

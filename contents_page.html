@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contents Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(45deg, #D0E8FF, #89B7E0, #508DC9);
+      color: #fff;
+      padding: 40px;
+    }
+
+    #contents {
+      width: 300px;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .content-item {
+      padding: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      background-color: #89B7E0;
+      border: 1px solid #508DC9;
+      border-radius: 5px;
+      transition: all 0.5s ease;
+    }
+
+    .content-item:hover {
+      background-color: #508DC9;
+    }
+
+    .content-card {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      max-width: 600px;
+      padding: 20px;
+      background-color: #D0E8FF;
+      border: 1px solid #89B7E0;
+      border-radius: 5px;
+      display: none;
+      z-index: 10;
+      transition: opacity 0.5s ease;
+    }
+
+    .content-card.active {
+      display: block;
+      opacity: 1;
+    }
+
+    .content-card.inactive {
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+<ul id="contents">
+  <li class="content-item" onclick="showContent('genetic-edition')">
+    The Genetic Edition
+  </li>
+  <li class="content-item" onclick="showContent('about-project')">
+    About the Project
+  </li>
+  <li class="content-item" onclick="showContent('the-team')">
+    The Team
+  </li>
+  <li class="content-item" onclick="showContent('andrew-daives')">
+    Andrew Daives
+  </li>
+  <li class="content-item" onclick="showContent('dr-beverley')">
+    Dr. Beverley Park Rilett
+  </li>
+  <li class="content-item" onclick="showContent('feedback')">
+    Your Feedback
+  </li>
+  <li class="content-item" onclick="showContent('download-data')">
+    Download our data
+  </li>
+  <li class="content-item" onclick="showContent('view-metadata')">
+    View Metadata
+  </li>
+</ul>
+
+<div class="content-card active" id="genetic-edition">
+  Details about The Genetic Edition
+  <div><button><a href="indexed.html">The Genetic Edition</a></button></div>
+</div>
+<div class="content-card inactive" id="about-project">Details about the project</div>
+<div class="content-card inactive" id="the-team">Details about the team</div>
+<div class="content-card inactive" id="andrew-daives">Details about Andrew Daives</div>
+<div class="content-card inactive" id="dr-beverley">Details about Dr. Beverley Park Rilett</div>
+<div class="content-card inactive" id="feedback">Details about feedback</div>
+<div class="content-card inactive" id="download-data">Details about data download</div>
+<div class="content-card inactive" id="view-metadata">Details about metadata</div>
+
+<script>
+  function showContent(id) {
+    const cards = document.querySelectorAll('.content-card');
+    cards.forEach(card => {
+      card.classList.remove('active');
+      card.classList.add('inactive');
+    });
+
+    const activeCard = document.getElementById(id);
+    activeCard.classList.add('active');
+    activeCard.classList.remove('inactive');
+  }
+</script>
+
+</body>
+</html>

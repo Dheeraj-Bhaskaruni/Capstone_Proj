@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="navbar">
+  <div class="dropdown">
+    <button class="drop" >Show / Hide Sections</button>
+    <div class="dropdown-content">
+      <a href="#" onclick="toggleVisibility('block1')">Novel</a>
+      <a href="#" onclick="toggleVisibility('block2')">Shooting Script</a>
+      <a href="#" onclick="toggleVisibility('block3')">Post-Production Script</a>
+      <a href="#" onclick="toggleVisibility('block4')">Notes</a>
+      <a href="#" onclick="toggleVisibility('block5')">Commentary</a>
+    </div>
+  </div>
+</div>
+
+
+<div id="message" style="color: red; display: none;">All sections are hidden, please reload the page!</div>
+
+<p>Transforming Middlemarch: A Genetic Edition of Andrew Davies' 1994 BBC Adaptation of George Eliot's Novel
+  Introducing the project
+  Welcome to this 'genetic edition' of Andrew Davies' 1994 BBC adaptation of George Eliot's Middlemarch. This multimedia resource, believed to be the first of its kind, uses XML textual encoding - following the principles of the Text Encoding Initiative (TEI) - to enable comparative analyses charting the journey of a literary adaptation from source novel to script and screen.
+
+  Users can navigate from the Shooting Script backwards (to the novel) and forwards (to the Post-production Script), following diamond icons leading to Notes, intertextual references, a range of assets and additional extended Commentaries on key scenes and adaptive moments. In this way, the genetic edition demonstrates both the creative skills of the screen adaptor and script editor, and (via additional production history research) the collaborative nature of classic serial television adaptation.</p>
+
+<div class="blocks">
+  <div id="block1" class="block">
+    <div class="block-heading">Novel</div>
+    <div class="content" id="notes_html">
+
+    </div>
+  </div>
+  <div id="block2" class="block">
+    <div class="block-heading">Shooting Script</div>
+    <div class="content" id="ss_html">
+
+
+    </div>
+  </div>
+  <div id="block3" class="block">
+    <div class="block-heading">Post-Production Script</div>
+    <div class="content" id="pp_html">
+
+    </div>
+
+  </div>
+</div>
+<div class="blocks">
+  <div id="block4" class="block1">
+    <div class="block-heading">Notes</div>
+    <div class="content" id="fn_html">
+    </div>
+  </div>
+  <div id="block5" class="block1">
+    <div class="block-heading">Commentary</div>
+    <div class="content" id="co_html">
+    </div>
+  </div>
+
+</div>
+<script src=script.js></script>
+</body>
+</html>
